@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Ecommerce Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .buttons {
+            margin: 20px;
+        }
+        .buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: calc(25% - 40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="renderProducts('all')">All</button>
+        <button onclick="renderProducts('Electronics')">Electronics</button>
+        <button onclick="renderProducts('Footwear')">Footwear</button>
+        <button onclick="renderProducts('Home Appliances')">Home Appliances</button>
+        <button onclick="renderProducts('Stationery')">Stationery</button>
+        <button onclick="renderProducts('Furniture')">Furniture</button>
+        <button onclick="renderProducts('Fitness')">Fitness</button>
+        <button onclick="renderProducts('Kitchen Appliances')">Kitchen Appliances</button>
+    </div>
+    <div class="product-list" id="product-list"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
